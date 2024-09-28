@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Cahsun</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0; /* Green text for a hacker theme */
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: -2px -2px 0 #0F0, 2px 2px 0 #0F0;
+            }
+            25% {
+                text-shadow: -2px 2px 0 #0F0, 2px -2px 0 #0F0;
+            }
+            50% {
+                text-shadow: 2px -2px 0 #0F0, -2px 2px 0 #0F0;
+            }
+            75% {
+                text-shadow: 2px 2px 0 #0F0, -2px -2px 0 #0F0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Cahsun</h1>
+    </div>
+</body>
+</html>
+
